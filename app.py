@@ -687,8 +687,8 @@ with col_input:
                 st.session_state.analysis_result = None
                 st.session_state.last_sig = sig
                 st.toast(t["status_uploaded"], icon="📤")
-
-                if demo_clicked:
+                
+        if demo_clicked:
             with st.spinner("جاري جلب صورة طبية..." if is_rtl else "Fetching medical image..."):
                 try:
                     import requests
