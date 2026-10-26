@@ -13,14 +13,13 @@
 
 </div>
 
----
-## 📋 نظرة عامة
+---## 📋 نظرة عامة
 
 <div dir="rtl">
 
-**PneumoScan AI** هو نظام ذكي للكشف عن الالتهاب الرئوي من صور الأشعة السينية (Chest X-Rays). يعتمد النظام على نموذج تعلم عميق (**MobileNetV3**) مبني بواسطة **PyTorch**، ويقدم واجهة تفاعلية ثنائية اللغة.
+**PneumoScan AI** هو تطبيق ويب ذكي مصمم للكشف عن الالتهاب الرئوي من خلال تحليل صور الأشعة السينية للصدر. يعتمد النظام على تقنيات التعلم العميق لتقديم تشخيص فوري ودقيق.
 
-يتميز النظام بقدرته على تفسير النتائج عبر خريطة حرارية (**Grad-CAM**) توضح للطبيب مناطق تركيز الذكاء الاصطناعي، مما يعزز الثقة في التشخيص.
+الميزة الأبرز هي قدرة النظام على تفسير قراره؛ حيث يوفر خريطة حرارية توضح المناطق الدقيقة التي ركز عليها الذكاء الاصطناعي داخل الصورة. هذا التفسير البصري يمنح الأطباء رؤية واضحة، مما يعزز الثقة في النتائج ويسهل مراجعتها.
 
 </div>
 
@@ -28,12 +27,11 @@
 
 <div dir="ltr">
 
-**PneumoScan AI** is an intelligent web application for detecting Pneumonia from Chest X-Rays. Built with **PyTorch** and a fine-tuned **MobileNetV3** model, it provides a bilingual interactive interface.
+**PneumoScan AI** is an intelligent web application designed to detect pneumonia by analyzing chest X-rays. The system leverages deep learning to provide fast and accurate real-time diagnoses.
 
-The system features **Explainable AI (Grad-CAM)** heatmaps to visualize the regions influencing the model's decision, enhancing clinical trust and interpretability.
+Its standout feature is the ability to explain its decisions. By generating a heatmap, the system visually highlights the specific regions the AI focused on. This visual explanation provides clinicians with clear evidence, significantly enhancing the trust and interpretability of the results.
 
 </div>
----
 
 ## ✨ Features
 
