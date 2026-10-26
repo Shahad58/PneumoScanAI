@@ -3,6 +3,7 @@ torch
 torchvision
 Pillow
 numpy
-opencv-python-headless
+opencv-python
 grad-cam
 reportlab
+requests
