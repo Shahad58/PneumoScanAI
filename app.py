@@ -689,17 +689,32 @@ with col_input:
                 st.toast(t["status_uploaded"], icon="📤")
 
         if demo_clicked:
-            demo_dir = os.path.join(DATA_DIR, "test", random.choice(CLASS_NAMES))
-            files = []
-            if os.path.exists(demo_dir):
-                files = [f for f in os.listdir(demo_dir) if f.lower().endswith((".jpg", ".jpeg", ".png"))]
-            if files:
-                demo_path = os.path.join(demo_dir, random.choice(files))
-                st.session_state.uploaded_image = Image.open(demo_path).convert("RGB")
-                st.session_state.analysis_result = None
-                st.toast(t["status_demo"], icon="🎲")
-            else:
-                st.error(t["missing_data"])
+            with st.spinner("جاري جلب صورة أشعة عشوائية..." if is_rtl else "Fetching random X-ray..."):
+                try:
+                    offset = random.randint(0, 623)
+                    api_url = f"https://datasets-server.huggingface.co/rows?dataset=keremberke%2Fchest-xray-classification&config=full&split=test&offset={offset}&length=1"
+                    res = requests.get(api_url, timeout=10)
+                    if res.status_code == 200:
+                        data = res.json()
+                        img_src = data['rows'][0]['row']['image']['src']
+                        img_res = requests.get(img_src, timeout=10)
+                        if img_res.status_code == 200:
+                            st.session_state.uploaded_image = Image.open(io.BytesIO(img_res.content)).convert("RGB")
+                            st.session_state.analysis_result = None
+                            st.toast(t["status_demo"], icon="🎲")
+                except Exception:
+                    demo_dir = os.path.join(DATA_DIR, "test", random.choice(CLASS_NAMES))
+                    files = []
+                    if os.path.exists(demo_dir):
+                        files = [f for f in os.listdir(demo_dir) if f.lower().endswith((".jpg", ".jpeg", ".png"))]
+                    if files:
+                        demo_path = os.path.join(demo_dir, random.choice(files))
+                        st.session_state.uploaded_image = Image.open(demo_path).convert("RGB")
+                        st.session_state.analysis_result = None
+                        st.toast(t["status_demo"], icon="🎲")
+                    else:
+                        st.error(t["missing_data"])
+
 
         if st.session_state.uploaded_image is not None:
             scan_frame(st.session_state.uploaded_image, t["original"])
