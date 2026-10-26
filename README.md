@@ -29,27 +29,65 @@
 
 ---
 
-<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+## 🇸🇦 نبذة عن المشروع
 
-> [!NOTE]💡
->
-> الرابط أعلاه هو تطبيق حي ومباشر (Live App) يمكنك تجربته فوراً من متصفحك دون الحاجة لتحميل أي شيء.
->
-> **لتشغيل المشروع على جهازك الخاص، يمكنك اتباع الخطوات الموضحة أدناه.**
->
-> *The link above is a fully deployed Live App. You can test it instantly in your browser. To run it locally on your machine, follow the steps below.*
+**PneumoScan AI** هو نظام طبي ذكي للكشف عن الالتهاب الرئوي من صور الأشعة السينية. يعتمد على التعلم العميق لتقديم تشخيص فوري، مع توفير **خريطة حرارية (Grad-CAM)** توضح مناطق تركيز الذكاء الاصطناعي، مما يمنح الطبيب رؤية واضحة ويُعزز الثقة في القرار.
 
----
-
-## ⚡ 𝑷𝒓𝒐𝒋𝒆𝒄𝒕 𝑶𝒗𝒆𝒓𝒗𝒊𝒆𝒘 | نظرة عامة
-
-**PneumoScan AI** is a premium, interactive clinical dashboard designed to assist in detecting Pneumonia from Chest X-Ray images. It features a sleek medical-grade design, dynamic visualizations, bilingual support (English/Arabic RTL), and explainable AI.
-
-The core of the project is a **Deep Learning Application** powered by **PyTorch (MobileNetV3)** and **Grad-CAM** to not only provide a diagnosis but also explain *where* the AI is looking.
+**المميزات:**
+- 🔬 **تشخيص فوري:** نتيجة دقيقة خلال ثوانٍ.
+- 🧠 **ذكاء قابل للتفسير:** خريطة حرارية توضح سبب التشخيص.
+- 📄 **تقرير طبي PDF:** جاهز للطباعة يحتوي على بيانات المريض والنتائج.
+- 🌐 **دعم كامل للعربية:** واجهة ثنائية اللغة (RTL).
+- 🎲 **تجربة سريعة:** زر يجلب صورة أشعة حقيقية عشوائية للتحليل الفوري.
 
 ---
 
-## 🚀 3 Steps to Run Locally | خطوات تشغيل المشروع محلياً
+## 🇬🇧 Project Overview
+
+**PneumoScan AI** is an intelligent medical system for detecting Pneumonia from Chest X-Rays. It uses Deep Learning to provide instant diagnoses, complete with an **Explainable AI (Grad-CAM)** heatmap that highlights the regions of interest, enhancing clinical trust.
+
+**Key Features:**
+- 🔬 **Instant Diagnosis:** Accurate results in seconds.
+- 🧠 **Explainable AI:** Heatmaps that explain the model's decision.
+- 📄 **Clinical PDF Reports:** Downloadable reports with patient data and results.
+- 🌐 **True Bilingual UI:** Seamless English/Arabic (RTL) support.
+- 🎲 **Quick Demo:** Load real random X-rays for instant testing.
+
+---
+
+## 📸 معاينة الواجهة | Dashboard Preview
+
+<div align="center">
+  <br>
+
+
+
+
+  
+  
+  <br>
+</div>
+
+---
+
+## 🛠️ التقنيات المستخدمة | Tech Stack
+
+<div align="center">
+
+| Category | Technologies |
+| :--- | :--- |
+| **Frontend / UI** | `Streamlit`, `HTML5`, `CSS3`, `Glassmorphism` |
+| **Backend** | `Python 3.11` |
+| **Deep Learning** | `PyTorch`, `Torchvision`, `MobileNetV3` |
+| **Computer Vision** | `OpenCV`, `PIL`, `Grad-CAM` |
+| **Reporting** | `ReportLab (PDF Generation)` |
+| **Design** | `Medical Light Theme`, `Animated UI`, `RTL Support` |
+
+</div>
+
+---
+
+## 🚀 خطوات التشغيل | How to Run Locally
 
 To run the complete interactive project on your machine, follow these three simple steps:
 
@@ -79,81 +117,9 @@ python -m streamlit run app.py
 
 ---
 
-## ✨ 𝑲𝒆𝒚 𝑭𝒆𝒂𝒕𝒖𝒓𝒆𝒔 | المميزات الرئيسية
-
-<table>
-  <tr>
-    <td width="50%">
-      <h3>🧠 Explainable AI (Grad-CAM)</h3>
-      <p>Uses <b>Grad-CAM</b> to generate a heatmap, highlighting the exact regions of the lung the AI focused on to make its diagnosis.</p>
-    </td>
-    <td width="50%">
-      <h3>🤖 Deep Learning Diagnostics</h3>
-      <p>Leverages a fine-tuned <b>MobileNetV3</b> architecture via Transfer Learning on the Kaggle Chest X-Ray dataset for fast and accurate detection.</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <h3>📄 Clinical PDF Reports</h3>
-      <p>Generates downloadable, professional medical reports including patient details, original X-ray, AI heatmap, and confidence scores using <b>ReportLab</b>.</p>
-    </td>
-    <td width="50%">
-      <h3>🌍 True Bilingual UI (RTL)</h3>
-      <p>Seamless switching between English and Arabic. The entire layout, fonts, and text directions adapt automatically to Right-to-Left.</p>
-    </td>
-  </tr>
-</table>
-
----
-
-## 📸 𝑫𝒂𝒔𝒉𝒃𝒐𝒂𝒓𝒅 𝑷𝒓𝒆𝒗𝒊𝒆𝒘 | معاينة الواجهة
-
-<div align="center">
-  <br>
-  
-
-
-  
-  <br>
-</div>
-
----
-
-## 🛠️ 𝑻𝒆𝒄𝒉 𝑺𝒕𝒂𝒄𝒌 | التقنيات المستخدمة
-
 <div align="center">
 
-| Category | Technologies |
-| :--- | :--- |
-| **Frontend / UI** | `Streamlit`, `HTML5`, `CSS3`, `Glassmorphism` |
-| **Backend** | `Python 3.11` |
-| **Deep Learning** | `PyTorch`, `Torchvision`, `MobileNetV3` |
-| **Computer Vision** | `OpenCV`, `PIL`, `Grad-CAM` |
-| **Reporting** | `ReportLab (PDF Generation)` |
-| **Design** | `Medical Light Theme`, `Animated UI`, `RTL Support` |
-
-</div>
-
----
-
-## 📁 𝑷𝒓𝒐𝒋𝒆𝒄𝒕 𝑺𝒕𝒓𝒖𝒄𝒕𝒖𝒓𝒆 | هيكل المشروع
-
-```
-/PneumoScanAI
-├── app.py                     ← Full application (Streamlit + AI + UI)
-├── requirements.txt           ← Python dependencies
-├── packages.txt               ← System dependencies (libgl1 for OpenCV)
-├── pneumonia_mobilenet.pth    ← Pre-trained PyTorch Model Weights
-└── README.md                  ← This file
-```
-
-> **ملاحظة:** عند التجربة، يعمل النموذج فوراً دون الحاجة لتدريب. تأكد من وجود ملف الأوزان `pneumonia_mobilenet.pth` في نفس المجلد.
-
----
-
-<div align="center">
-
-## 👨‍💻 𝑨𝒖𝒕𝒉𝒐𝒓 | المطور
+## 👨‍💻 المطور | Author
 
 **SHODO** ⛥
 
