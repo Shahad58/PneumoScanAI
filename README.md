@@ -1,13 +1,13 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=32&pause=1000&color=0A6EBD&center=true&vCenter=true&width=800&lines=PneumoScan+AI;Medical+Image+Classification;Explainable+AI+(Grad-CAM);Streamlit+Deployment" alt="Typing SVG" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=32&pause=1000&color=0A6EBD&center=true&vCenter=true&width=800&lines=PneumoScan+AI;Medical+Image+Classification;Explainable+AI+(Grad-CAM);Streamlit+Web+App" alt="Typing SVG" />
 
 <br>
 
 [![Live Demo](https://img.shields.io/badge/🩺_LIVE_DEMO-TRY_IT_NOW-success?style=for-the-badge&logo=streamlit&logoColor=white)](https://pneumoscan-ai-shodo.streamlit.app/)
 [![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-Deep_Learning-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-Web_App-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-Framework-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io/)
 
 </div>
 
@@ -15,27 +15,63 @@
 
 ## 🇸🇦 نظرة عامة
 
-**PneumoScan AI** هو تطبيق ويب للكشف عن الالتهاب الرئوي من صور الأشعة السينية (Chest X-Rays). يعتمد النظام على نموذج تعلم عميق (MobileNetV3) مبني بواسطة PyTorch، ويوفر واجهة تفاعلية باللغتين العربية والإنجليزية.
+**PneumoScan AI** هو تطبيق ويب متكامل للكشف عن الالتهاب الرئوي من صور الأشعة السينية. يعتمد النظام على نموذج تعلم عميق (MobileNetV3) مبني بواسطة PyTorch، ويقدم واجهة تفاعلية باللغتين العربية والإنجليزية.
 
-**المميزات:**
-* **تشخيص فوري:** تصنيف الصورة (سليمة / التهاب رئوي) مع حساب نسبة الثقة.
-* **تفسير القرار (Grad-CAM):** توليد خريطة حرارية توضح للطبيب المناطق التي اعتمد عليها النموذج في التشخيص.
-* **تقارير طبية:** إمكانية تحميل تقرير PDF يحتوي على بيانات المريض، الصورة، والنتائج.
-* **بيانات تجريبية ديناميكية:** جلب صور أشعة حقيقية عشوائية من قواعد بيانات مفتوحة المصدر لتجربة التطبيق فوراً.
-* **دعم RTL:** واجهة مستخدم متجاوبة مع دعم كامل للغة العربية.
+### ✨ المميزات الرئيسية
+
+<table>
+  <tr>
+    <td width="50%">
+      <h3>🧠 تفسير القرار (Grad-CAM)</h3>
+      <p>توليد خريطة حرارية توضح للطبيب المناطق التي اعتمد عليها النموذج في التشخيص، مما يعزز الثقة في النتائج.</p>
+    </td>
+    <td width="50%">
+      <h3>⚡ تشخيص فوري</h3>
+      <p>تصنيف الصورة (سليمة / التهاب) مع حساب نسبة الثقة بدقة، ليعطي نتيجة في أقل من ثانية.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3>📄 تقارير طبية (PDF)</h3>
+      <p>إمكانية تحميل تقرير فني شامل يحتوي على بيانات المريض، الصورة الأصلية، الخريطة الحرارية، والنتيجة.</p>
+    </td>
+    <td width="50%">
+      <h3>🎲 تجربة ديناميكية</h3>
+      <p>جلب صور أشعة حقيقية وعشوائية من قواعد بيانات مفتوحة المصدر (Hugging Face) لتجربة النظام فوراً.</p>
+    </td>
+  </tr>
+</table>
 
 ---
 
 ## 🇬🇧 Overview
 
-**PneumoScan AI** is a web application for detecting Pneumonia from Chest X-Rays. The system utilizes a Deep Learning model (MobileNetV3) built with PyTorch, providing an interactive interface in both Arabic and English.
+**PneumoScan AI** is a comprehensive web application designed to detect Pneumonia from Chest X-Rays. The system utilizes a Deep Learning model (MobileNetV3) built with PyTorch, providing an interactive interface in both Arabic and English.
 
-**Features:**
-* **Instant Diagnosis:** Classifies X-rays (Normal / Pneumonia) with a confidence score.
-* **Explainable AI (Grad-CAM):** Generates heatmaps to visualize the regions influencing the model's decision.
-* **Clinical Reports:** Export detailed PDF reports including patient data, original X-ray, and AI heatmap.
-* **Dynamic Demo Mode:** Fetches random, real X-rays from an open-source dataset for instant testing without manual uploads.
-* **RTL Support:** Fully responsive UI with native Right-to-Left Arabic support.
+### ✨ Key Features
+
+<table>
+  <tr>
+    <td width="50%">
+      <h3>🧠 Explainable AI (Grad-CAM)</h3>
+      <p>Generates heatmaps to visualize the regions influencing the model's decision, enhancing clinical trust and interpretability.</p>
+    </td>
+    <td width="50%">
+      <h3>⚡ Instant Diagnosis</h3>
+      <p>Classifies X-rays (Normal / Pneumonia) with high accuracy and a confidence score, delivering results in under a second.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3>📄 Clinical PDF Reports</h3>
+      <p>Export detailed technical reports including patient data, original X-ray, AI heatmap, and final diagnosis.</p>
+    </td>
+    <td width="50%">
+      <h3>🎲 Dynamic Demo Mode</h3>
+      <p>Fetches random, real X-rays from open-source datasets (Hugging Face) for instant testing without manual uploads.</p>
+    </td>
+  </tr>
+</table>
 
 ---
 
@@ -59,10 +95,10 @@
 | Field | Technologies |
 | :--- | :--- |
 | **Deep Learning** | `PyTorch`, `Torchvision`, `MobileNetV3` (Transfer Learning) |
-| **Explainable AI** | `Grad-CAM` (Custom implementation) |
+| **Explainable AI** | `Grad-CAM` |
 | **Backend & UI** | `Python 3.11`, `Streamlit` |
 | **Computer Vision** | `PIL`, `OpenCV` |
-| **Reporting** | `ReportLab` (PDF Generation) |
+| **Reporting** | `ReportLab` |
 
 </div>
 
@@ -86,7 +122,7 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-> **Note:** Ensure the pre-trained model weights (`pneumonia_mobilenet.pth`) are placed in the root directory before running.
+> **Note:** Ensure the pre-trained weights (`pneumonia_mobilenet.pth`) are in the root directory before running.
 
 ---
 
