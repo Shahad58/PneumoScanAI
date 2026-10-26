@@ -63,8 +63,12 @@ Beyond a label and a confidence score, PneumoScan **explains its decision**: a G
 ## 📸 App Preview
 
 <div align="center">
-  <!-- ضع رابط صورتك هنا بدلاً من هذا النص -->
-  <img src="https://via.placeholder.com/1000x520/EAF4F6/0F8B8D?text=PneumoScan+AI+-+Dashboard+Preview" alt="Home screen" width="100%"/>
+<img width="1920" height="2657" alt="image" src="https://github.com/user-attachments/assets/ce52ea03-160a-4c0e-9085-f6323409c28f" />
+
+<img width="1920" height="2597" alt="image" src="https://github.com/user-attachments/assets/d9ed8cf9-5639-400f-ade5-783fdebee0e2" />
+
+ <img width="290" height="365" alt="image" src="https://github.com/user-attachments/assets/0fa673e1-c44c-4950-b6a8-db786a049d87" />
+
 </div>
 
 ---
